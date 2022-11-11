@@ -20,3 +20,12 @@ void PrintSubsequences(int ind,int arr[],int n,int sum,int s,vector<int> &ds){
    PrintSubsequences(ind+1,arr,n,sum,s,ds);
   return ;
 }
+  
+int main(){
+  int arr[]={1,2,3};
+  int n=3;
+  int sum=3;
+  vector<int> ds;
+  PrintSubsequences(0,arr,n,sum,0,ds);
+  return 0;
+}
